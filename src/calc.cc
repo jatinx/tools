@@ -22,13 +22,13 @@ int main(int argc, char **argv) {
   case '-':
     std::cout << a - b << std::endl;
     break;
-  case '*':
+  case 'x':
     std::cout << a * b << std::endl;
     break;
   case '/':
-    std::cout << a / b << std::endl;
+    std::cout << double(a) / b << std::endl;
     break;
   default:
-    error_message("Supported Operators:: +, -, *, /", ACTION::DIE);
+    error_message("Supported Operators:: +, -, x, /", ACTION::DIE);
   }
 }
